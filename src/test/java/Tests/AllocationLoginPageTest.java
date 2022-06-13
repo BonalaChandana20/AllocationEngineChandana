@@ -9,7 +9,7 @@ public class AllocationLoginPageTest extends BaseTest {
 
 
     @Test(priority= 1)
-    public  void verifyStatusPod() throws InterruptedException {
+    public  void TC07_verifyStatusPod() throws InterruptedException {
         log.info("logged into The Application");
         page.getInstance(AllocationLoginPage.class).doLogin();
        log.info("Verifying the Status of Pod");
@@ -20,7 +20,7 @@ public class AllocationLoginPageTest extends BaseTest {
 
     }
     @Test(priority= 2)
-    public void verifyNominateHaSher() {
+    public void TC08_verifyNominateHaSher() {
         page.getInstance(AllocationLoginPage.class).doLogin();
         String Status = page.getInstance(AllocationLoginPage.class).NominateHaSher();
         System.out.println("Status After Nominating is:"+""+Status);
@@ -28,7 +28,7 @@ public class AllocationLoginPageTest extends BaseTest {
 
     }
     @Test(priority= 3)
-    public void verifyFilterOption() throws InterruptedException {
+    public void TC10_verifyFilterOption() throws InterruptedException {
         page.getInstance(AllocationLoginPage.class).doLogin();
        String Skill= page.getInstance(AllocationLoginPage.class).FilterOptionSkill();
        String WebPageSkill = page.getInstance(AllocationLoginPage.class).WebPageSkill();
@@ -41,14 +41,14 @@ public class AllocationLoginPageTest extends BaseTest {
     }
 
     @Test(priority= 4)
-    public void VerifyAddingHasSher() {
+    public void TC09_VerifyAddingHasSher() {
         page.getInstance(AllocationLoginPage.class).doLogin();
         page.getInstance(AllocationLoginPage.class).AddingHaSher();
 
 
     }
     @Test
-    public void verifyStatusAfterSaveConfiguration() throws InterruptedException {
+    public void TC21_verifyStatusAfterSaveConfiguration() throws InterruptedException {
         page.getInstance(AllocationLoginPage.class).doLogin();
        String status= page.getInstance(AllocationLoginPage.class).ClickOnUpcomingPod();
        System.out.println("status after configuring the POD :"+status);
