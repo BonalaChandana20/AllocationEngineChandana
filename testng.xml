@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/bochandana/IdeaProjects/AllocationengineTask">
+    <classes>
+        <class name="Tests.AllocationLoginPageTest"><methods>
+            <include name="TC07_verifyStatusPod"/>
+            <include name="TC08_verifyNominateHaSher"/><include name="TC09_verifyFilterOption"/>
+            <include name="TC10_VerifyAddingHasSher"/><include name="TC21_verifyStatusAfterSaveConfiguration"/>
+        </methods></class></classes></test></suite>

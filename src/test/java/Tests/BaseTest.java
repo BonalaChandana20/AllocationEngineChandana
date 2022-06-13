@@ -60,7 +60,7 @@ public class BaseTest {
 
     }
 
-       @AfterMethod
+        @AfterMethod
     public void tearDown(){
        // extent.flush()
            log.info("browser Closed");

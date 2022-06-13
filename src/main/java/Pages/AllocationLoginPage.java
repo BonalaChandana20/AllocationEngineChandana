@@ -70,6 +70,7 @@ public class AllocationLoginPage extends BasePage {
         doClick(ClickOnTab);
         doClick(ClickOnNominate);
         //WaitCondition(ClickOnFilter,30);
+        //driver.navigate().refresh();
         Thread.sleep(4000);
         doClick(ClickOnFilter);
         isdisplayed(Skill);
